@@ -11,9 +11,12 @@ defmodule GpsAlerts.Application do
       # Start the Ecto repository
       GpsAlerts.Repo,
       # Start the endpoint when the application starts
-      GpsAlertsWeb.Endpoint
+      GpsAlertsWeb.Endpoint,
       # Starts a worker by calling: GpsAlerts.Worker.start_link(arg)
       # {GpsAlerts.Worker, arg},
+      GpsAlerts.Scheduler,
+      # Inicia el cliente Websocket
+      {GpsAlerts.WsClient, []}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

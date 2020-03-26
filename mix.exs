@@ -44,7 +44,9 @@ defmodule GpsAlerts.MixProject do
       {:jason, "~> 1.1"},
       {:plug_cowboy, "~> 2.0"},
       {:bcrypt_elixir, "~> 2.0"},
-      {:tesla, "~> 1.2"}
+      {:tesla, "~> 1.2"},
+      {:quantum, "~> 3.0-rc"},
+      {:websockex, "~> 0.4.2"}
     ]
   end
 
