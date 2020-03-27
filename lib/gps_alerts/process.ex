@@ -25,6 +25,9 @@ defmodule GpsAlerts.Process do
         device = Map.get(content, "data")
         %{"name" => name} = device
         %Process.Message{map | name: name}
+        company = Map.get(device, "group")
+        %{"name" => name} = company
+        %Process.Message{map | company: name}
 
       {:error, reason} ->
         "error opteniendo id #{reason}"
@@ -48,10 +51,13 @@ defmodule GpsAlerts.Process do
   end
 
   def send_message(map) do
-    msg = "el vehiculo #{map.name} esta a #{map.velocity} Km/h en #{map.local_name}
-        https://www.google.com/maps/place/#{map.lat},#{map.lng}"
+    msg = "Vehiculo #{map.name} de la de la compañía #{map.company}
+      va conduciendo a #{map.velocity} Km/h en #{map.local_name}
+      https://www.google.com/maps/place/#{map.lat},#{map.lng}"
+
     IO.puts("#{msg}")
-    Wassenger.send_text("+584128892862", msg)
+    Wassenger.send_text("", msg)
+    # Wassenger.send_text("", msg)
   end
 
   def set_struct(map) do
