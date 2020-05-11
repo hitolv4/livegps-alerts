@@ -46,7 +46,8 @@ defmodule GpsAlerts.MixProject do
       {:bcrypt_elixir, "~> 2.0"},
       {:tesla, "~> 1.2"},
       {:quantum, "~> 3.0-rc"},
-      {:websockex, "~> 0.4.2"}
+      {:websockex, "~> 0.4.2"},
+      {:bamboo, "~> 1.4"}
     ]
   end
 

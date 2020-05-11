@@ -34,3 +34,11 @@ npm-debug.log
 /priv/static/
 
 /.elixir_ls/
+
+# Directorios para procesar data que se va a enviar por  email
+/lib/gps_alerts/processing/
+
+/lib/gps_alerts/send/
+
+lib/gps_alerts/sended/
+

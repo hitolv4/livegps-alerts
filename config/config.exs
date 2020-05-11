@@ -31,5 +31,12 @@ import_config "#{Mix.env()}.exs"
 
 config :gps_alerts, GpsAlerts.Scheduler,
   jobs: [
-    # {"*/2 * * * *", {GpsAlerts.Process, :init, []}}
+    {"*/5 * * * *", {GpsAlerts.Process, :processing_to_send, []}}
   ]
+
+# config :gps_alerts, GpsAlerts.Mailer,
+#  adapter: Bamboo.SendGridAdapter,
+#  api_key: "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",
+#  json_library: Jason
+
+# config :my_app, GpsAlerts.Mailer, sandbox: true

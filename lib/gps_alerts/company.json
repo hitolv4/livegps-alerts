@@ -1,0 +1,45 @@
+[
+    {
+        "company_id": 9,
+        "email": {
+            "user1": "victorravelolv4@gmai.com",
+            "user2": "victorravelolv4@hotmail.com"
+        },
+        "telefono": {
+            "user1": "04128892862",
+            "user2": "04128892862"
+        }
+    },
+    {
+        "company_id": 47,
+        "email": {
+            "user1": "victorravelolv4@gmai.com",
+            "user2": "victorravelolv4@hotmail.com"
+        },
+        "telefono": {
+            "user1": "04128892862",
+            "user2": "04128892862"
+        }
+    },    {
+        "company_id": 29,
+        "email": {
+            "user1": "victorravelolv4@gmai.com",
+            "user2": "victorravelolv4@hotmail.com"
+        },
+        "telefono": {
+            "user1": "04128892862",
+            "user2": "04128892862"
+        }
+    },
+    {
+        "company_id": 62,
+        "email": {
+            "user1": "victorravelolv4@gmai.com",
+            "user2": "victorravelolv4@hotmail.com"
+        },
+        "telefono": {
+            "user1": "04128892862",
+            "user2": "04128892862"
+        }
+    }
+]
