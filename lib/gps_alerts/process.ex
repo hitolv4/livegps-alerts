@@ -14,7 +14,7 @@ defmodule GpsAlerts.Process do
   # Para Produccion GpsCon.lpf()
   # data para ambiente de desarrollo data.json
   def check_lpf(map) do
-    if map["velocity"] >= 60 do
+    if map["velocity"] >= 300 do
       map
     end
   end

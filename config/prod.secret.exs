@@ -39,3 +39,10 @@ config :gps_alerts, GpsAlertsWeb.Endpoint,
 #
 # Then you can assemble a release by calling `mix release`.
 # See `mix help release` for more information.
+
+config :gps_alerts, GpsAlerts.GpsCon,
+credentials: %{
+  username: "pbastias@transportes5.com",
+  password: "19Transportes5"
+}
+  endpoint: "https://socketgpsv1.gestsol.cl"
